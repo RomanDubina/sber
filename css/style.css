@@ -1,0 +1,216 @@
+
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url(../fonts/SBSansDisplay-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url(../fonts/SBSansDisplay-SemiBold.otf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBSansText';
+    src: url(../fonts/SBSansText-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBSansText';
+    src: url(../fonts/SBSansText-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url(../fonts/SBSansDisplay-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-family: 'SBSansDisplay';
+    background-image: url(../images/bg/bg-body.png);
+    background-position: center center;
+    background-repeat: repeat-y;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    padding: 34px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+
+.header__logo{
+    width: 255px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header__logo::before{
+    content: '';
+    position: absolute;
+    width: 207px;
+    height: 39px;
+    background-image: url(../images/logo/logo-driwings.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 88%;
+    top: 50%;
+    transform: translateY(-50%) rotate(2.16deg);
+}
+
+.postcard{
+    /* padding: 307px 0 41px; */
+    /* height: 567px; */
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: 102% 0;
+    /* padding-bottom: 41px; */
+    /* background-clip: content-box; */
+}
+.postcard__inner{
+    display: flex;
+    align-items: flex-end;
+    height: 567px;
+}
+.postcard__content{
+    max-width: 532px;
+    width: 100%;
+}
+.postcard__title{
+    font-weight: 300;
+    font-size: 68px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 36px;
+}
+.postcard__title span{
+    font-weight: 600;
+}
+.postcard__wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+.postcard__text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    margin-left: 23px;
+    max-width: 383px;
+    width: 100%;
+    padding-bottom: 96px;
+}
+.postcard__btn--down{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-image: url(../images/icons/btn-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.videos{
+    padding: 83px 0 198px;
+    background: linear-gradient(100.89deg, #107F8B 2.15%, #1F9C97 44.78%, #30BDA4 87.42%);
+    color: #fff;
+}
+.videos__title{
+    font-size: 30px;
+    line-height: 38px;
+    font-family: 'SBSansText';
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.videos__title span{
+    display: block;
+}
+.videos__text{
+    font-family: 'SBSansText';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 467px;
+    width: 100%;
+    padding-bottom: 17px;
+    margin-bottom: 70px;
+}
+.videos__gallery{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.videos__item+.videos__item{
+    margin-left: 63px;
+}
+.videos__item{
+    max-width: 357px;
+    width: 100%;
+}
+.videos__item-img{
+     width: 355px;
+     height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px; 
+    overflow: hidden;
+    margin-bottom: 32px;
+    position: relative;
+}
+.videos__item-img .btn-play{
+    width: 53px;
+    height: 53px;
+    background-image: url(../images/icons/btn-play.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 12px;
+    bottom: 8px;
+    cursor: pointer;
+}
+.videos__item-img img{
+    width: 100%;
+    object-fit: none;
+    object-position: -13px -1px;
+}
+.videos__item-name{
+    font-size: 24px;
+    line-height: 90%;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.videos__item-text{
+    font-family: 'SBSansText';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
